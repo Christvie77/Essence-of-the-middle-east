@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Essence</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+
+        :root{
+            --gold:#c79a5b;
+            --dark:#050505;
+        }
+
+        body{
+            background:var(--dark);
+            color:white;
+            font-family:'Poppins', sans-serif;
+        }
+
+        /* NAVBAR */
+        .navbar{
+            background:#000;
+            border-bottom:1px solid #1f1f1f;
+            padding:15px 20px;
+        }
+
+        /* LOGO ONLY (NOT CLICKABLE TEXT) */
+        .brand{
+            display:flex;
+            align-items:center;
+            gap:10px;
+        }
+
+        .brand img{
+            width:45px;
+        }
+
+        .brand-text{
+            font-family:'Cormorant Garamond', serif;
+            font-size:1.4rem;
+            color:white;
+            font-weight:500;
+        }
+
+        .card-box{
+            background:#0d0d0d;
+            border:1px solid #1f1f1f;
+            padding:25px;
+            border-radius:10px;
+        }
+
+        .btn-gold{
+            background:var(--gold);
+            color:black;
+            font-weight:600;
+            border:none;
+        }
+
+        a{
+            text-decoration:none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar d-flex justify-content-between align-items-center">
+
+    <!-- LEFT: LOGO (GOES HOME) -->
+    <a href="Home.html" class="brand">
+        <img src="images/logo.png" alt="Logo">
+        <div class="brand-text">Dashboard</div>
+    </a>
+
+    <!-- RIGHT: ACTIONS ONLY -->
+    <div>
+        <a href="Login.html" class="btn btn-sm btn-outline-light">Logout</a>
+    </div>
+
+</nav>
+
+<!-- CONTENT -->
+<div class="container mt-5">
+
+    <div class="card-box mb-4">
+        <h2>Welcome, Chris</h2>
+        <p>Email: chriskabangu@gmail.com</p>
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-md-6">
+            <div class="card-box">
+                <h4>Edit Profile</h4>
+                <p>Update your personal details</p>
+                <a href="Editprofile.html" class="btn btn-gold">Edit</a>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card-box">
+                <h4>Security</h4>
+                <p>Change or reset your password</p>
+                <a href="Resetpassword.html" class="btn btn-gold">Manage</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
